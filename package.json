@@ -1,0 +1,19 @@
+{
+  "name": "sass-responsive-layout",
+  "version": "1.0.0",
+  "description": "sass library for simple responsive layout",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devinfrenze/sass-responsive-layout.git"
+  },
+  "author": "Devin Frenze",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devinfrenze/sass-responsive-layout/issues"
+  },
+  "homepage": "https://github.com/devinfrenze/sass-responsive-layout#readme"
+}
