@@ -6,11 +6,9 @@
   <body>
     <div class="demo">
       <div class="label">
-        Content is light gray. Containers are dark gray.
+        Stretch and compress the screen width to see how the widths change. Content is dark gray. Containers are light gray.
       </div>
-      <div class="label">
-        "container--padded content--partial" is the same as "container--padded content--max"
-      </div>
+
       <div class="label">
         Minimum Content Size (content--min): content always has gutter
       </div>
@@ -33,7 +31,7 @@
         <div>content--partial container--min</div>
       </div>
       <div class="content--partial container--padded">
-        <div>content--partial container--padded</div>
+        <div>content--partial container--padded*</div>
       </div>
       <div class="content--partial container--max">
         <div>content--partial container--max</div>
@@ -47,7 +45,7 @@
         <div>content--max container--min</div>
       </div>
       <div class="content--max container--padded">
-        <div>content--max container--padded</div>
+        <div>content--max container--padded*</div>
       </div>
       <div class="content--max container--max">
         <div>content--max container--max</div>
@@ -75,10 +73,10 @@
         <div>container--padded content--min</div>
       </div>
       <div class="content--partial container--padded">
-        <div>container--padded content--partial</div>
+        <div>container--padded content--partial*</div>
       </div>
       <div class="content--max container--padded">
-        <div>container--padded content--max</div>
+        <div>container--padded content--max*</div>
       </div>
 
       <div class="label">
@@ -93,6 +91,9 @@
       </div>
       <div class="content--max container--max">
         <div>container--max content--max</div>
+      </div>
+      <div class="label">
+        * "container--padded content--partial" is the same as "container--padded content--max"
       </div>
     </div>
   </body>
