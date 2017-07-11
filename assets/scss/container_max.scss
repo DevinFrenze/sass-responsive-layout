@@ -1,0 +1,25 @@
+.container--max.content--partial {
+  max-width: $content-max-width;
+
+  @include container-max($screen-xs-min, $content-xs-padding);
+  @include container-max($screen-sm-min, $content-sm-padding);
+  @include container-max($screen-md-min, $content-md-padding);
+
+  @include container-max($content-max-width + (2 * $content-md-padding), calc((100% - #{$content-max-width}) / 2));
+}
+
+.container--max.content--min {
+  max-width: $content-max-width - (2 * $content-xl-padding);
+
+  @include container-max($screen-xs-min, $content-xs-padding);
+  @include container-max($screen-sm-min, $content-sm-padding);
+  @include container-max($screen-md-min, $content-md-padding);
+  @include container-max($screen-lg-min, $content-lg-padding);
+  @include container-max($screen-xl-min, $content-xl-padding);
+
+  @include container-max($content-max-width, calc(#{$content-xl-padding} + ((100% - #{$content-max-width}) / 2)));
+}
+
+.container--max.content--max {
+  @include container-max($content-max-width, calc((100% - #{$content-max-width}) / 2));
+}

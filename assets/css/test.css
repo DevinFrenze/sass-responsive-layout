@@ -1,0 +1,25 @@
+.content--partial.container--min {
+  background: green; }
+
+.content--partial.container--padded {
+  background: pink; }
+
+.content--partial.container--max {
+  background: yellow; }
+
+.content--min.container--min {
+  background: purple; }
+
+.content--min.container--padded {
+  background: teal; }
+
+.content--min.container--max {
+  background: blue; }
+
+.content--max.container--min {
+  background: orange; }
+
+.content--max.container--max {
+  background: red; }
+
+/*# sourceMappingURL=test.css.map */

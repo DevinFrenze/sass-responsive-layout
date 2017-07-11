@@ -1,0 +1,19 @@
+.container--padded.content--partial {
+  max-width: $content-max-width - (2 * $content-md-padding);
+  @include center-container;
+
+  @include container-max($screen-xs-min, $content-xs-padding);
+  @include container-max($screen-sm-min, $content-sm-padding);
+  @include container-max($screen-md-min, $content-md-padding);
+}
+
+.container--padded.content--min {
+  max-width: $content-max-width - (2 * $content-xl-padding);
+  @include center-container;
+
+  @include container-max($screen-xs-min, $content-xs-padding);
+  @include container-max($screen-sm-min, $content-sm-padding);
+  @include container-max($screen-md-min, $content-md-padding);
+  @include container-max($screen-lg-min, $content-lg-padding);
+  @include container-max($screen-xl-min, $content-xl-padding);
+}

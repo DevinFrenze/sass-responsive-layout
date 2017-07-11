@@ -1,0 +1,160 @@
+.container--min.content--partial {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media only screen and (min-width: 0px) {
+    .container--min.content--partial {
+      width: calc(100% - (2 * 16px)); } }
+  @media only screen and (min-width: 576px) {
+    .container--min.content--partial {
+      width: calc(100% - (2 * 24px)); } }
+  @media only screen and (min-width: 768px) {
+    .container--min.content--partial {
+      width: calc(100% - (2 * 32px)); } }
+
+.container--min.content--min {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media only screen and (min-width: 0px) {
+    .container--min.content--min {
+      width: calc(100% - (2 * 16px)); } }
+  @media only screen and (min-width: 576px) {
+    .container--min.content--min {
+      width: calc(100% - (2 * 24px)); } }
+  @media only screen and (min-width: 768px) {
+    .container--min.content--min {
+      width: calc(100% - (2 * 32px)); } }
+  @media only screen and (min-width: 992px) {
+    .container--min.content--min {
+      width: calc(100% - (2 * 64px)); } }
+  @media only screen and (min-width: 1200px) {
+    .container--min.content--min {
+      width: calc(100% - (2 * 128px)); } }
+
+.container--min.content--max {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.container--padded.content--partial {
+  max-width: 1216px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media only screen and (min-width: 0px) {
+    .container--padded.content--partial {
+      padding-left: 16px;
+      padding-right: 16px; } }
+  @media only screen and (min-width: 576px) {
+    .container--padded.content--partial {
+      padding-left: 24px;
+      padding-right: 24px; } }
+  @media only screen and (min-width: 768px) {
+    .container--padded.content--partial {
+      padding-left: 32px;
+      padding-right: 32px; } }
+
+.container--padded.content--min {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media only screen and (min-width: 0px) {
+    .container--padded.content--min {
+      padding-left: 16px;
+      padding-right: 16px; } }
+  @media only screen and (min-width: 576px) {
+    .container--padded.content--min {
+      padding-left: 24px;
+      padding-right: 24px; } }
+  @media only screen and (min-width: 768px) {
+    .container--padded.content--min {
+      padding-left: 32px;
+      padding-right: 32px; } }
+  @media only screen and (min-width: 992px) {
+    .container--padded.content--min {
+      padding-left: 64px;
+      padding-right: 64px; } }
+  @media only screen and (min-width: 1200px) {
+    .container--padded.content--min {
+      padding-left: 128px;
+      padding-right: 128px; } }
+
+.container--max.content--partial {
+  max-width: 1280px; }
+  @media only screen and (min-width: 0px) {
+    .container--max.content--partial {
+      padding-left: 16px;
+      padding-right: 16px; } }
+  @media only screen and (min-width: 576px) {
+    .container--max.content--partial {
+      padding-left: 24px;
+      padding-right: 24px; } }
+  @media only screen and (min-width: 768px) {
+    .container--max.content--partial {
+      padding-left: 32px;
+      padding-right: 32px; } }
+  @media only screen and (min-width: 1344px) {
+    .container--max.content--partial {
+      padding-left: calc((100% - 1280px) / 2);
+      padding-right: calc((100% - 1280px) / 2); } }
+
+.container--max.content--min {
+  max-width: 1024px; }
+  @media only screen and (min-width: 0px) {
+    .container--max.content--min {
+      padding-left: 16px;
+      padding-right: 16px; } }
+  @media only screen and (min-width: 576px) {
+    .container--max.content--min {
+      padding-left: 24px;
+      padding-right: 24px; } }
+  @media only screen and (min-width: 768px) {
+    .container--max.content--min {
+      padding-left: 32px;
+      padding-right: 32px; } }
+  @media only screen and (min-width: 992px) {
+    .container--max.content--min {
+      padding-left: 64px;
+      padding-right: 64px; } }
+  @media only screen and (min-width: 1200px) {
+    .container--max.content--min {
+      padding-left: 128px;
+      padding-right: 128px; } }
+  @media only screen and (min-width: 1280px) {
+    .container--max.content--min {
+      padding-left: calc(128px + ((100% - 1280px) / 2));
+      padding-right: calc(128px + ((100% - 1280px) / 2)); } }
+
+@media only screen and (min-width: 1280px) {
+  .container--max.content--max {
+    padding-left: calc((100% - 1280px) / 2);
+    padding-right: calc((100% - 1280px) / 2); } }
+
+.content--partial.container--min {
+  background: green; }
+
+.content--partial.container--padded {
+  background: pink; }
+
+.content--partial.container--max {
+  background: yellow; }
+
+.content--min.container--min {
+  background: purple; }
+
+.content--min.container--padded {
+  background: teal; }
+
+.content--min.container--max {
+  background: blue; }
+
+.content--max.container--min {
+  background: orange; }
+
+.content--max.container--max {
+  background: red; }
+
+body {
+  margin: 0; }
+
+/*# sourceMappingURL=main.css.map */
