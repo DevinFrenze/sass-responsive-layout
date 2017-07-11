@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$content-max-width".
-        on line 2 of assets/scss/container_min.scss
+        on line 2 of scss/container_min.scss
 
 1: .container--min.content--partial {
 2:   max-width: $content-max-width;
@@ -11,7 +11,7 @@ Error: Undefined variable: "$content-max-width".
 7:   @include container-min($screen-md-min, $content-md-padding);
 
 Backtrace:
-assets/scss/container_min.scss:2
+scss/container_min.scss:2
 /Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
 /Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -64,4 +64,4 @@ assets/scss/container_min.scss:2
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$content-max-width\".\A         on line 2 of assets/scss/container_min.scss\A \A 1: .container--min.content--partial {\A 2:   max-width: $content-max-width;\A 3:   @include center-container;\A 4: \A 5:   @include container-min($screen-xs-min, $content-xs-padding);\A 6:   @include container-min($screen-sm-min, $content-sm-padding);\A 7:   @include container-min($screen-md-min, $content-md-padding);"; }
+  content: "Error: Undefined variable: \"$content-max-width\".\A         on line 2 of scss/container_min.scss\A \A 1: .container--min.content--partial {\A 2:   max-width: $content-max-width;\A 3:   @include center-container;\A 4: \A 5:   @include container-min($screen-xs-min, $content-xs-padding);\A 6:   @include container-min($screen-sm-min, $content-sm-padding);\A 7:   @include container-min($screen-md-min, $content-md-padding);"; }
