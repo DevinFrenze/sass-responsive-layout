@@ -6,42 +6,93 @@
   <body>
     <div class="demo">
       <div class="label">
-        Minimum Sized Containers
+        Content is in light gray, containers are in dark gray.
+      </div>
+      <div class="label">
+        content--max.container--padded is the same as content--partial.container--padded
+      </div>
+      <div class="label">
+        Minimum Content Size (content--min): content always has gutter
       </div>
 
       <div class="content--min container--min">
-        container--min content--min
+        <div>content--min container--min</div>
       </div>
-      <div class="content--partial container--min">
-        container--min content--partial
+      <div class="content--min container--padded">
+        <div>content--min container--padded</div>
       </div>
-      <div class="content--max container--min">
-        container--min content--max
+      <div class="content--min container--max">
+        <div>content--min container--max</div>
       </div>
 
       <div class="label">
-        Padded Containers
+        Partial Content Size (content--partial): content uses a smaller gutter and until it expands to maximum width
+      </div>
+
+      <div class="content--partial container--min">
+        <div>content--partial container--min</div>
+      </div>
+      <div class="content--partial container--padded">
+        <div>content--partial container--padded</div>
+      </div>
+      <div class="content--partial container--max">
+        <div>content--partial container--max</div>
+      </div>
+
+      <div class="label">
+        Maximum Content Size (content--max): content is as wide as the maximum width
+      </div>
+
+      <div class="content--max container--min">
+        <div>content--max container--min</div>
+      </div>
+      <div class="content--max container--padded">
+        <div>content--max container--padded</div>
+      </div>
+      <div class="content--max container--max">
+        <div>content--max container--max</div>
+      </div>
+
+      <div class="label">
+        Minimum Container Size (container--min): container is only as wide as its content
+      </div>
+
+      <div class="content--min container--min">
+        <div>container--min content--min</div>
+      </div>
+      <div class="content--partial container--min">
+        <div>container--min content--partial</div>
+      </div>
+      <div class="content--max container--min">
+        <div>container--min content--max</div>
+      </div>
+
+      <div class="label">
+        Padded Container Size (container--padded): container is as wide as maximum width and forces padding around content
       </div>
 
       <div class="content--min container--padded">
-        container--padded content--min
+        <div>container--padded content--min</div>
       </div>
       <div class="content--partial container--padded">
-        container--padded content--partial
+        <div>container--padded content--partial</div>
+      </div>
+      <div class="content--max container--padded">
+        <div>container--padded content--max</div>
       </div>
 
       <div class="label">
-        Minimum Sized Containers
+        Maximum Container Size (container--max): container is as wide as screen
       </div>
 
       <div class="content--min container--max">
-        container--max content--min
+        <div>container--max content--min</div>
       </div>
       <div class="content--partial container--max">
-        container--max content--partial
+        <div>container--max content--partial</div>
       </div>
       <div class="content--max container--max">
-        container--max content--max
+        <div>container--max content--max</div>
       </div>
     </div>
   </body>

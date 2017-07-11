@@ -1,21 +1,31 @@
 /*
 Error: Undefined variable: "$content-min-width".
-        on line 1 of scss/container_max.scss
+        on line 2 of scss/content.scss
 
-1: $min-flex-padding: calc((100% - #{$content-min-width}) / 2);
-2: $max-flex-padding: calc((100% - #{$content-max-width}) / 2);
-3: 
-4: .container--max.content--min,
-5: .container--max.content--partial {
-6:   @include container-max($screen-xs-min, $content-xs-padding);
+1: .content--min {
+2:   max-width: $content-min-width;
+3: }
+4: 
+5: .content--partial,
+6: .content--max {
+7:   max-width: $content-max-width;
 
 Backtrace:
-scss/container_max.scss:1
+scss/content.scss:2
 /Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
-/Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/script/tree/interpolation.rb:170:in `_perform'
-/Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
-/Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:471:in `visit_variable'
+/Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
+/Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+/Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+/Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
+/Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
 /Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 /Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
@@ -54,4 +64,4 @@ scss/container_max.scss:1
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$content-min-width\".\A         on line 1 of scss/container_max.scss\A \A 1: $min-flex-padding: calc((100% - #{$content-min-width}) / 2);\A 2: $max-flex-padding: calc((100% - #{$content-max-width}) / 2);\A 3: \A 4: .container--max.content--min,\A 5: .container--max.content--partial {\A 6:   @include container-max($screen-xs-min, $content-xs-padding);"; }
+  content: "Error: Undefined variable: \"$content-min-width\".\A         on line 2 of scss/content.scss\A \A 1: .content--min {\A 2:   max-width: $content-min-width;\A 3: }\A 4: \A 5: .content--partial,\A 6: .content--max {\A 7:   max-width: $content-max-width;"; }

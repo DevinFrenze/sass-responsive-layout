@@ -1,0 +1,8 @@
+.content--min {
+  max-width: $content-min-width;
+}
+
+.content--partial,
+.content--max {
+  max-width: $content-max-width;
+}

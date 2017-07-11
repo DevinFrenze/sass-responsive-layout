@@ -1,20 +1,24 @@
 /*
-Error: Undefined variable: "$content-max-width".
-        on line 2 of scss/container_min.scss
+Error: Undefined mixin 'center-container'.
+        on line 2 of scss/container_min.scss, in `center-container'
+        from line 2 of scss/container_min.scss
 
-1: .container--min.content--partial {
-2:   max-width: $content-max-width;
-3:   @include center-container;
+1: .container--min {
+2:   @include center-container;
+3: }
 4: 
-5:   @include container-min($screen-xs-min, $content-xs-padding);
-6:   @include container-min($screen-sm-min, $content-sm-padding);
-7:   @include container-min($screen-md-min, $content-md-padding);
+5: .container--min.content--min,
+6: .container--min.content--partial {
+7:   @include container-min($screen-xs-min, $content-xs-padding);
 
 Backtrace:
+scss/container_min.scss:2:in `center-container'
 scss/container_min.scss:2
-/Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
-/Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
-/Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
+/Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
+/Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
+/Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/stack.rb:98:in `with_mixin'
+/Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
 /Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 /Users/devinfrenze/.rvm/gems/ruby-2.2.3/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
@@ -64,4 +68,4 @@ scss/container_min.scss:2
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$content-max-width\".\A         on line 2 of scss/container_min.scss\A \A 1: .container--min.content--partial {\A 2:   max-width: $content-max-width;\A 3:   @include center-container;\A 4: \A 5:   @include container-min($screen-xs-min, $content-xs-padding);\A 6:   @include container-min($screen-sm-min, $content-sm-padding);\A 7:   @include container-min($screen-md-min, $content-md-padding);"; }
+  content: "Error: Undefined mixin 'center-container'.\A         on line 2 of scss/container_min.scss, in `center-container'\A         from line 2 of scss/container_min.scss\A \A 1: .container--min {\A 2:   @include center-container;\A 3: }\A 4: \A 5: .container--min.content--min,\A 6: .container--min.content--partial {\A 7:   @include container-min($screen-xs-min, $content-xs-padding);"; }

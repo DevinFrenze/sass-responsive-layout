@@ -20,3 +20,4 @@ $content-xl-padding: 128px;
 
 // maximum permittable content width
 $content-max-width: 1280px;
+$content-min-width: $content-max-width - (2 * $content-xl-padding)
