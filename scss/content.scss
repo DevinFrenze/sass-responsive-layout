@@ -1,8 +1,8 @@
-.content--min {
-  max-width: $content-min-width;
+.content--narrow {
+  max-width: $content-narrow-max-width;
 }
 
-.content--partial,
-.content--max {
-  max-width: $content-max-width;
+.content--dynamic,
+.content--wide {
+  max-width: $content-wide-max-width;
 }

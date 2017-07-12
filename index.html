@@ -6,88 +6,88 @@
   <body>
     <div class="demo">
       <div class="label">
-        Stretch and compress the screen width to see how the widths change. Content is dark gray. Containers are light gray.
+        Change screen width to observe responsive behavior. Content is dark gray. Containers are light gray.
       </div>
 
       <div class="label">
-        Minimum Content Size (content--min): content always has gutter
+        content--narrow: content always has gutter applied
       </div>
 
-      <div class="content--min container--min">
-        <div>content--min container--min</div>
+      <div class="content--narrow container--min">
+        <div>content--narrow container--min</div>
       </div>
-      <div class="content--min container--padded">
-        <div>content--min container--padded</div>
+      <div class="content--narrow container--pad">
+        <div>content--narrow container--pad</div>
       </div>
-      <div class="content--min container--max">
-        <div>content--min container--max</div>
-      </div>
-
-      <div class="label">
-        Partial Content Size (content--partial): content uses a smaller gutter and until it expands to maximum width
-      </div>
-
-      <div class="content--partial container--min">
-        <div>content--partial container--min</div>
-      </div>
-      <div class="content--partial container--max">
-        <div>content--partial container--max</div>
+      <div class="content--narrow container--screen">
+        <div>content--narrow container--screen</div>
       </div>
 
       <div class="label">
-        Maximum Content Size (content--max): content is as wide as the maximum width
+        content--dynamic: content is narrow (has gutter) on small screens and is wide on large screens
       </div>
 
-      <div class="content--max container--min">
-        <div>content--max container--min</div>
+      <div class="content--dynamic container--min">
+        <div>content--dynamic container--min</div>
       </div>
-      <div class="content--max container--max">
-        <div>content--max container--max</div>
-      </div>
-
-      <div class="label">
-        Minimum Container Size (container--min): container is only as wide as its content
-      </div>
-
-      <div class="content--min container--min">
-        <div>container--min content--min</div>
-      </div>
-      <div class="content--partial container--min">
-        <div>container--min content--partial</div>
-      </div>
-      <div class="content--max container--min">
-        <div>container--min content--max</div>
+      <div class="content--dynamic container--screen">
+        <div>content--dynamic container--screen</div>
       </div>
 
       <div class="label">
-        Padded Container Size (container--padded): container is as wide as maximum width and forces padding around content
+        content--wide: content is as wide as the page max width
       </div>
 
-      <div class="content--min container--padded">
-        <div>container--padded content--min</div>
+      <div class="content--wide container--min">
+        <div>content--wide container--min</div>
       </div>
-      <div class="content--partial container--padded">
-        <div>container--padded content--partial*</div>
-      </div>
-      <div class="content--max container--padded">
-        <div>container--padded content--max*</div>
+      <div class="content--wide container--screen">
+        <div>content--wide container--screen</div>
       </div>
 
       <div class="label">
-        Maximum Container Size (container--max): container is as wide as screen
+        container--min: container is only as wide as its content
       </div>
 
-      <div class="content--min container--max">
-        <div>container--max content--min</div>
+      <div class="content--narrow container--min">
+        <div>container--min content--narrow</div>
       </div>
-      <div class="content--partial container--max">
-        <div>container--max content--partial</div>
+      <div class="content--dynamic container--min">
+        <div>container--min content--dynamic</div>
       </div>
-      <div class="content--max container--max">
-        <div>container--max content--max</div>
+      <div class="content--wide container--min">
+        <div>container--min content--wide</div>
+      </div>
+
+      <div class="label">
+        container--pad: container is as wide as page max width and forces padding around content
+      </div>
+
+      <div class="content--narrow container--pad">
+        <div>container--pad content--narrow</div>
+      </div>
+      <div class="content--dynamic container--pad">
+        <div>container--pad content--dynamic*</div>
+      </div>
+      <div class="content--wide container--pad">
+        <div>container--pad content--wide*</div>
+      </div>
+
+      <div class="label">
+        container--screen: container is as wide as screen
+      </div>
+
+      <div class="content--narrow container--screen">
+        <div>container--screen content--narrow</div>
+      </div>
+      <div class="content--dynamic container--screen">
+        <div>container--screen content--dynamic</div>
+      </div>
+      <div class="content--wide container--screen">
+        <div>container--screen content--wide</div>
       </div>
       <div class="label">
-        * "container--padded content--partial" is the same as "container--padded content--max"
+        * "container--pad content--dynamic" is the same as "container--pad content--wide"
       </div>
     </div>
   </body>

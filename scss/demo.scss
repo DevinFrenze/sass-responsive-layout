@@ -4,9 +4,9 @@
 }
 
 .demo {
-  .content--max,
-  .content--partial,
-  .content--min {
+  .content--narrow,
+  .content--dynamic,
+  .content--wide {
     margin-top: 8px;
     margin-bottom: 8px;
     padding-top: 8px;
@@ -25,8 +25,8 @@
 }
 
 .demo .label {
-  @extend .content--min;
-  @extend .container--padded;
+  @extend .content--narrow;
+  @extend .container--pad;
 
   margin-top: 36px;
   margin-bottom: 36px;

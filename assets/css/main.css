@@ -3,134 +3,132 @@
   margin-right: auto; }
 
 @media only screen and (min-width: 0px) {
-  .container--min.content--min, .demo .container--min.label,
-  .container--min.content--partial {
+  .container--min.content--narrow, .demo .container--min.label,
+  .container--min.content--dynamic {
     width: calc(100% - (2 * 16px)); } }
 @media only screen and (min-width: 576px) {
-  .container--min.content--min, .demo .container--min.label,
-  .container--min.content--partial {
+  .container--min.content--narrow, .demo .container--min.label,
+  .container--min.content--dynamic {
     width: calc(100% - (2 * 24px)); } }
 @media only screen and (min-width: 768px) {
-  .container--min.content--min, .demo .container--min.label,
-  .container--min.content--partial {
+  .container--min.content--narrow, .demo .container--min.label,
+  .container--min.content--dynamic {
     width: calc(100% - (2 * 32px)); } }
 
 @media only screen and (min-width: 992px) {
-  .container--min.content--min, .demo .container--min.label {
+  .container--min.content--narrow, .demo .container--min.label {
     width: calc(100% - (2 * 64px)); } }
 @media only screen and (min-width: 1200px) {
-  .container--min.content--min, .demo .container--min.label {
+  .container--min.content--narrow, .demo .container--min.label {
     width: calc(100% - (2 * 128px)); } }
 
-.container--padded, .demo .label {
+.container--pad, .demo .label {
   margin-left: auto;
   margin-right: auto; }
 
 @media only screen and (min-width: 0px) {
-  .container--padded.content--min, .demo .label,
-  .container--padded.content--partial,
-  .container--padded.content--max,
-  .demo .content--max.label,
-  .demo .content--partial.label {
+  .container--pad.content--narrow, .demo .label,
+  .container--pad.content--dynamic,
+  .container--pad.content--wide,
+  .demo .content--wide.label,
+  .demo .content--dynamic.label {
     padding-left: 16px;
     padding-right: 16px; } }
 @media only screen and (min-width: 576px) {
-  .container--padded.content--min, .demo .label,
-  .container--padded.content--partial,
-  .container--padded.content--max,
-  .demo .content--max.label,
-  .demo .content--partial.label {
+  .container--pad.content--narrow, .demo .label,
+  .container--pad.content--dynamic,
+  .container--pad.content--wide,
+  .demo .content--wide.label,
+  .demo .content--dynamic.label {
     padding-left: 24px;
     padding-right: 24px; } }
 @media only screen and (min-width: 768px) {
-  .container--padded.content--min, .demo .label,
-  .container--padded.content--partial,
-  .container--padded.content--max,
-  .demo .content--max.label,
-  .demo .content--partial.label {
+  .container--pad.content--narrow, .demo .label,
+  .container--pad.content--dynamic,
+  .container--pad.content--wide,
+  .demo .content--wide.label,
+  .demo .content--dynamic.label {
     padding-left: 32px;
     padding-right: 32px; } }
 
 @media only screen and (min-width: 992px) {
-  .container--padded.content--min, .demo .label {
+  .container--pad.content--narrow, .demo .label {
     padding-left: 64px;
     padding-right: 64px; } }
 @media only screen and (min-width: 1200px) {
-  .container--padded.content--min, .demo .label {
+  .container--pad.content--narrow, .demo .label {
     padding-left: 128px;
     padding-right: 128px; } }
 
-.container--padded.content--partial, .container--padded.content--max, .demo .content--max.label, .demo .content--partial.label {
+.container--pad.content--dynamic, .container--pad.content--wide, .demo .content--wide.label, .demo .content--dynamic.label {
   max-width: 1216px; }
 
 @media only screen and (min-width: 0px) {
-  .container--max.content--min, .demo .container--max.label,
-  .container--max.content--partial {
+  .container--screen.content--narrow, .demo .container--screen.label,
+  .container--screen.content--dynamic {
     padding-left: 16px;
     padding-right: 16px; } }
 @media only screen and (min-width: 576px) {
-  .container--max.content--min, .demo .container--max.label,
-  .container--max.content--partial {
+  .container--screen.content--narrow, .demo .container--screen.label,
+  .container--screen.content--dynamic {
     padding-left: 24px;
     padding-right: 24px; } }
 @media only screen and (min-width: 768px) {
-  .container--max.content--min, .demo .container--max.label,
-  .container--max.content--partial {
+  .container--screen.content--narrow, .demo .container--screen.label,
+  .container--screen.content--dynamic {
     padding-left: 32px;
     padding-right: 32px; } }
 
 @media only screen and (min-width: 992px) {
-  .container--max.content--min, .demo .container--max.label {
+  .container--screen.content--narrow, .demo .container--screen.label {
     padding-left: 64px;
     padding-right: 64px; } }
 @media only screen and (min-width: 1152px) {
-  .container--max.content--min, .demo .container--max.label {
+  .container--screen.content--narrow, .demo .container--screen.label {
     padding-left: calc((100% - 1024px) / 2);
     padding-right: calc((100% - 1024px) / 2); } }
 @media only screen and (min-width: 1200px) {
-  .container--max.content--min, .demo .container--max.label {
+  .container--screen.content--narrow, .demo .container--screen.label {
     padding-left: 128px;
     padding-right: 128px; } }
 @media only screen and (min-width: 1280px) {
-  .container--max.content--min, .demo .container--max.label {
+  .container--screen.content--narrow, .demo .container--screen.label {
     padding-left: calc((100% - 1024px) / 2);
     padding-right: calc((100% - 1024px) / 2); } }
 
-@media only screen and (min-width: 1344px) {
-  .container--max.content--partial {
+@media only screen and (min-width: 1216px) {
+  .container--screen.content--dynamic {
     padding-left: calc((100% - 1280px) / 2);
     padding-right: calc((100% - 1280px) / 2); } }
 
 @media only screen and (min-width: 1280px) {
-  .container--max.content--max {
+  .container--screen.content--wide {
     padding-left: calc((100% - 1280px) / 2);
     padding-right: calc((100% - 1280px) / 2); } }
 
-.content--min, .demo .label {
+.content--narrow, .demo .label {
   max-width: 1024px; }
 
-.content--partial,
-.content--max {
+.content--dynamic,
+.content--wide {
   max-width: 1280px; }
 
 .demo div {
   font-size: 20px;
   font-family: sans-serif; }
 
-.demo .content--max,
-.demo .content--partial,
-.demo .content--min,
-.demo .label {
+.demo .content--narrow, .demo .label,
+.demo .content--dynamic,
+.demo .content--wide {
   margin-top: 8px;
   margin-bottom: 8px;
   padding-top: 8px;
   padding-bottom: 8px;
   background: #bbb;
   text-align: center; }
-  .demo .content--max > div,
-  .demo .content--partial > div,
-  .demo .content--min > div,
-  .demo .label > div {
+  .demo .content--narrow > div, .demo .label > div,
+  .demo .content--dynamic > div,
+  .demo .content--wide > div {
     color: #fff;
     background: #666;
     padding-top: 2px;

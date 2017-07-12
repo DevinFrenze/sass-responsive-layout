@@ -1,15 +1,15 @@
 .container--min {
-  @include center-container;
+  @include margin-auto;
 }
 
-.container--min.content--min,
-.container--min.content--partial {
-  @include container-min($screen-xs-min, $content-xs-padding);
-  @include container-min($screen-sm-min, $content-sm-padding);
-  @include container-min($screen-md-min, $content-md-padding);
+.container--min.content--narrow,
+.container--min.content--dynamic {
+  @include constrict-width($screen-xs-min, $content-xs-gutter);
+  @include constrict-width($screen-sm-min, $content-sm-gutter);
+  @include constrict-width($screen-md-min, $content-md-gutter);
 }
 
-.container--min.content--min {
-  @include container-min($screen-lg-min, $content-lg-padding);
-  @include container-min($screen-xl-min, $content-xl-padding);
+.container--min.content--narrow {
+  @include constrict-width($screen-lg-min, $content-lg-gutter);
+  @include constrict-width($screen-xl-min, $content-xl-gutter);
 }
