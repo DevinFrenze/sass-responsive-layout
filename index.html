@@ -4,13 +4,29 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" media="screen" />
   </head>
   <body>
+    <div class="demo-markers">
+      <div class="container--screen demo-marker--screen">
+        <div class="demo-marker__text">container--screen</div>
+      </div>
+      <div class="content--wide container--min demo-marker--wide">
+        <div class="demo-marker__text">content--wide</div>
+      </div>
+      <div class="content--dynamic container--pad">
+        <div class="demo-marker--pad">
+          <div class="demo-marker__text">container--padded and content--dynamic</div>
+        </div>
+      </div>
+      <div class="content--narrow container--min demo-marker--narrow">
+        <div class="demo-marker__text">content--narrow</div>
+      </div>
+    </div>
     <div class="demo">
       <div class="label">
-        Change screen width to observe responsive behavior. Content is dark gray. Containers are light gray.
+        Change screen width to observe responsive behavior. Padding is light gray, and the area that can actually have normally positioned content is dark dray. Narrow width is calculated by subtracting the gutter (see variables.scss) size twice (for left and right) from the maximum width.
       </div>
 
       <div class="label">
-        content--narrow: content always has gutter applied
+        content--narrow: regardless of container, content is narrow
       </div>
 
       <div class="content--narrow container--min">
@@ -24,11 +40,14 @@
       </div>
 
       <div class="label">
-        content--dynamic: content is narrow (has gutter) on small screens and is wide on large screens
+        content--dynamic: content is narrow on small screens and wide large screens
       </div>
 
       <div class="content--dynamic container--min">
         <div>content--dynamic container--min</div>
+      </div>
+      <div class="content--dynamic container--pad">
+        <div>content--dynamic container--pad</div>
       </div>
       <div class="content--dynamic container--screen">
         <div>content--dynamic container--screen</div>
@@ -67,14 +86,11 @@
         <div>container--pad content--narrow</div>
       </div>
       <div class="content--dynamic container--pad">
-        <div>container--pad content--dynamic*</div>
-      </div>
-      <div class="content--wide container--pad">
-        <div>container--pad content--wide*</div>
+        <div>container--pad content--dynamic</div>
       </div>
 
       <div class="label">
-        container--screen: container is as wide as screen
+        container--screen: regardless of content, container is as wide as screen
       </div>
 
       <div class="content--narrow container--screen">
@@ -85,9 +101,6 @@
       </div>
       <div class="content--wide container--screen">
         <div>container--screen content--wide</div>
-      </div>
-      <div class="label">
-        * "container--pad content--dynamic" is the same as "container--pad content--wide"
       </div>
     </div>
   </body>

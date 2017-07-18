@@ -29,24 +29,18 @@
 @media only screen and (min-width: 0px) {
   .container--pad.content--narrow, .demo .label,
   .container--pad.content--dynamic,
-  .container--pad.content--wide,
-  .demo .content--wide.label,
   .demo .content--dynamic.label {
     padding-left: 16px;
     padding-right: 16px; } }
 @media only screen and (min-width: 576px) {
   .container--pad.content--narrow, .demo .label,
   .container--pad.content--dynamic,
-  .container--pad.content--wide,
-  .demo .content--wide.label,
   .demo .content--dynamic.label {
     padding-left: 24px;
     padding-right: 24px; } }
 @media only screen and (min-width: 768px) {
   .container--pad.content--narrow, .demo .label,
   .container--pad.content--dynamic,
-  .container--pad.content--wide,
-  .demo .content--wide.label,
   .demo .content--dynamic.label {
     padding-left: 32px;
     padding-right: 32px; } }
@@ -60,7 +54,7 @@
     padding-left: 128px;
     padding-right: 128px; } }
 
-.container--pad.content--dynamic, .container--pad.content--wide, .demo .content--wide.label, .demo .content--dynamic.label {
+.container--pad.content--dynamic, .demo .content--dynamic.label {
   max-width: 1216px; }
 
 @media only screen and (min-width: 0px) {
@@ -117,22 +111,24 @@
   font-size: 20px;
   font-family: sans-serif; }
 
-.demo .content--narrow, .demo .label,
-.demo .content--dynamic,
-.demo .content--wide {
-  margin-top: 8px;
-  margin-bottom: 8px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  background: #bbb;
-  text-align: center; }
-  .demo .content--narrow > div, .demo .label > div,
-  .demo .content--dynamic > div,
-  .demo .content--wide > div {
-    color: #fff;
-    background: #666;
-    padding-top: 2px;
-    padding-bottom: 2px; }
+.demo {
+  padding-top: 108px; }
+  .demo .content--narrow, .demo .label,
+  .demo .content--dynamic,
+  .demo .content--wide {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: #bbb;
+    text-align: center; }
+    .demo .content--narrow > div, .demo .label > div,
+    .demo .content--dynamic > div,
+    .demo .content--wide > div {
+      color: #fff;
+      background: #666;
+      padding-top: 2px;
+      padding-bottom: 2px; }
 
 .demo .label {
   margin-top: 36px;
@@ -140,6 +136,102 @@
   background: none;
   color: #333;
   text-align: center; }
+
+.demo-markers {
+  font-family: sans-serif;
+  font-size: 14px;
+  position: fixed;
+  height: 108px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.85);
+  padding-top: 1em; }
+
+.demo-marker--narrow {
+  color: indigo;
+  border-top: 2px solid rgba(75, 0, 130, 0.5);
+  position: relative;
+  margin-top: 1em;
+  height: 1em;
+  overflow: visible; }
+  .demo-marker--narrow:before, .demo-marker--narrow:after {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 100vh;
+    width: 2px;
+    top: 0;
+    background: rgba(75, 0, 130, 0.5); }
+  .demo-marker--narrow:before {
+    left: 0; }
+  .demo-marker--narrow:after {
+    right: 0; }
+
+.demo-marker--pad {
+  color: indigo;
+  border-top: 2px solid rgba(75, 0, 130, 0.5);
+  position: relative;
+  margin-top: 1em;
+  height: 1em;
+  overflow: visible; }
+  .demo-marker--pad:before, .demo-marker--pad:after {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 100vh;
+    width: 2px;
+    top: 0;
+    background: rgba(75, 0, 130, 0.5); }
+  .demo-marker--pad:before {
+    left: 0; }
+  .demo-marker--pad:after {
+    right: 0; }
+
+.demo-marker--wide {
+  color: indigo;
+  border-top: 2px solid rgba(75, 0, 130, 0.5);
+  position: relative;
+  margin-top: 1em;
+  height: 1em;
+  overflow: visible; }
+  .demo-marker--wide:before, .demo-marker--wide:after {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 100vh;
+    width: 2px;
+    top: 0;
+    background: rgba(75, 0, 130, 0.5); }
+  .demo-marker--wide:before {
+    left: 0; }
+  .demo-marker--wide:after {
+    right: 0; }
+
+.demo-marker--screen {
+  color: indigo;
+  border-top: 2px solid rgba(75, 0, 130, 0.5);
+  position: relative;
+  margin-top: 1em;
+  height: 1em;
+  overflow: visible; }
+  .demo-marker--screen:before, .demo-marker--screen:after {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 100vh;
+    width: 2px;
+    top: 0;
+    background: rgba(75, 0, 130, 0.5); }
+  .demo-marker--screen:before {
+    left: 0; }
+  .demo-marker--screen:after {
+    right: 0; }
+
+.demo-marker__text {
+  position: absolute;
+  bottom: 1.33em;
+  padding-left: 4px; }
 
 body {
   margin: 0; }

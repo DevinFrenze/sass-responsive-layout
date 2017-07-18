@@ -1,9 +1,13 @@
+$demo-markers-height: 108px;
+
 .demo div {
   font-size: 20px;
   font-family: sans-serif;
 }
 
 .demo {
+  padding-top: 108px;
+
   .content--narrow,
   .content--dynamic,
   .content--wide {
@@ -34,4 +38,63 @@
   background: none;
   color: #333;
   text-align: center;
+}
+
+.demo-markers {
+  font-family: sans-serif;
+  font-size: 14px;
+  position: fixed;
+  height: $demo-markers-height;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(white, 0.85);
+  padding-top: 1em;
+}
+
+@mixin demo-marker($color: indigo) {
+  color: $color;
+  border-top: 2px solid rgba($color, 0.5);
+  position: relative;
+  margin-top: 1em;
+  height: 1em;
+  overflow: visible;
+
+  &:before, &:after {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 100vh;
+    width: 2px;
+    top: 0;
+    background: rgba($color, 0.5);
+  }
+  &:before {
+    left: 0;
+  }
+  &:after {
+    right: 0;
+  }
+}
+
+.demo-marker--narrow {
+  @include demo-marker;
+}
+
+.demo-marker--pad {
+  @include demo-marker;
+}
+
+.demo-marker--wide {
+  @include demo-marker;
+}
+
+.demo-marker--screen {
+  @include demo-marker;
+}
+
+.demo-marker__text {
+  position: absolute;
+  bottom: 1.33em;
+  padding-left: 4px;
 }

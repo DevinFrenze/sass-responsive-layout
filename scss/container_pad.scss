@@ -17,7 +17,3 @@
 .container--pad.content--dynamic {
   max-width: $content-dynamic-max-width;
 }
-
-.container--pad.content--wide {
-   @extend .container--pad.content--dynamic;
-}
